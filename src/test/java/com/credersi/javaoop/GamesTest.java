@@ -4,7 +4,7 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-public class JavaOopTest {
+public class GamesTest {
 	@Test
 	public void testsToBeDefined() {
 		assertTrue(true);
