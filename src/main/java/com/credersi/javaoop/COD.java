@@ -15,7 +15,8 @@ public class COD extends Games implements Shooter {
 	}
 
 	public double getKDRatio() {
-		return kills/deaths;
+		kdRatio = kills/deaths;
+		return kdRatio;
 	}
 
 }
