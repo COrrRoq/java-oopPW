@@ -67,12 +67,12 @@ public class Games {
 				System.out.println("Which action would you like to perform?");
 				System.out.println("Get Ball Kicked, Goal Scored or Match Score");
 
-				gameChoice = reader.next().toUpperCase();
+				gameAction = reader.next().toUpperCase();
 
 				if (gameAction.equals("BALL KICKED")) {
-					fifa.ballKicked();
+					System.out.println(fifa.ballKicked());
 				} else if (gameAction.equals("GOAL SCORED")) {
-					fifa.goalScored();
+					System.out.println(fifa.goalScored());
 				} else if (gameAction.equals("MATCH SCORE")) {
 					System.out.println(fifa.getMatchScore());
 				}
@@ -82,14 +82,14 @@ public class Games {
 				System.out.println("Which action would you like to perform?");
 				System.out.println("Get Ball Kicked, Goal Scored or Match Score");
 
-				gameChoice = reader.next().toUpperCase();
+				gameAction = reader.next().toUpperCase();
 
 				if (gameAction.equals("BALL KICKED")) {
-					madden.ballKicked();
+					System.out.println(fifa.ballKicked());
 				} else if (gameAction.equals("GOAL SCORED")) {
-					madden.goalScored();
+					System.out.println(madden.goalScored());
 				} else if (gameAction.equals("MATCH SCORE")) {
-					madden.getMatchScore();
+					System.out.println(madden.getMatchScore());
 				}
 
 			}
@@ -105,13 +105,12 @@ public class Games {
 				System.out.println("Which action would you like to perform?");
 				System.out.println("Get Kills, Deaths or KD Ratio");
 
-				gameChoice = reader.next().toUpperCase();
+				gameAction = reader.next().toUpperCase();
 
 				if (gameAction.equals("KILLS")) {
-					callOfDuty.getKills();
+					System.out.println(callOfDuty.getKills());
 				} else if (gameAction.equals("DEATHS")) {
-					int deathsTemp = callOfDuty.getDeaths();
-					System.out.println(deathsTemp);
+					System.out.println(callOfDuty.getDeaths());
 				} else if (gameAction.equals("KD")) {
 					System.out.println(callOfDuty.getKDRatio());
 				}
@@ -121,14 +120,14 @@ public class Games {
 				System.out.println("Which action would you like to perform?");
 				System.out.println("Get Kills, Deaths or KD Ratio");
 
-				gameChoice = reader.next().toUpperCase();
+				gameAction = reader.next().toUpperCase();
 
 				if (gameAction.equals("KILLS")) {
-					halo.getKills();
+					System.out.println(halo.getKills());
 				} else if (gameAction.equals("DEATHS")) {
-					halo.getDeaths();
+					System.out.println(halo.getDeaths());
 				} else if (gameAction.equals("KD")) {
-					halo.getKDRatio();
+					System.out.println(halo.getKDRatio());
 				}
 
 			}
@@ -141,9 +140,35 @@ public class Games {
 			gameChoice = reader.next().toUpperCase();
 
 			if (gameChoice.equals("GOD OF WAR")) {
+				
+				System.out.println("Which action would you like to perform?");
+				System.out.println("Get Level, Missions Completed or Percentage Complete");
+
+				gameAction = reader.next().toUpperCase();
+
+				if (gameAction.equals("LEVEL")) {
+					System.out.println(godOfWar.getLevel());
+				} else if (gameAction.equals("MISSIONS COMPLETED")) {
+					System.out.println(godOfWar.getMissionsCompleted());
+				} else if (gameAction.equals("PERCENTAGE COMPLETED")) {
+					System.out.println(godOfWar.getPercentageComplete());
+				}
+
 
 			} else if (gameChoice.equals("ASSASSIN'S CREED")) {
 
+				System.out.println("Which action would you like to perform?");
+				System.out.println("Get Level, Missions Completed or Percentage Complete");
+
+				gameAction = reader.next().toUpperCase();
+
+				if (gameAction.equals("LEVEL")) {
+					System.out.println(assassinsCreed.getLevel());
+				} else if (gameAction.equals("MISSIONS COMPLETED")) {
+					System.out.println(assassinsCreed.getMissionsCompleted());
+				} else if (gameAction.equals("PERCENTAGE COMPLETED")) {
+					System.out.println(assassinsCreed.getPercentageComplete());
+				}
 			}
 
 		}
